@@ -1,0 +1,36 @@
+<div class="container text-center mt-4">
+  <h1>Ticket Information</h1>
+
+  <div class="m-3">
+    <div class="form-group m-3">
+      <div class="input-group mb-3 text-center">
+        <input type="text" [(ngModel)]="searchText" class="form-control " placeholder="Enter Ticket Name"/>
+        <div class="input-group-append">
+          <button (click)="searchTickets()" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <table class="table table-striped m3">
+    <thead>
+    <tr>
+      <th>Event Title</th>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Amount</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let ticket of tickets; let i = index">
+      <td>{{ events[i]?.eventTitle }}</td>
+      <td>{{ ticket.ticketName }}</td>
+      <td>{{ events[i]?.eventStartDate | date: 'dd/MM/yyyy' }}-{{events[i]?.eventEndDate | date: 'dd/MM/yyyy' }}</td>
+      <td>{{ ticket.amount }}</td>
+
+    </tr>
+    <p *ngIf="tickets.length==0">No Tickets For The Name Provided</p>
+    </tbody>
+  </table>
+</div>
+

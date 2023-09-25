@@ -1,0 +1,41 @@
+.event-image {
+  max-width: 100%; /* Limit the image width to its container */
+  height: auto; /* Maintain the aspect ratio */
+}
+.img-limit {
+  max-width: 100%; /* Set the maximum width */
+  max-height: 200px; /* Set the maximum height */
+  min-height: 200px;
+}
+.event-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.event-text-overlay,
+.event-dates-overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for transparency */
+}
+
+.event-text-overlay {
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for transparency */
+}
+
+.event-dates-overlay {
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for transparency */
+}
+
+.event-title,
+.event-dates {
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better visibility */
+}

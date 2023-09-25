@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">TicketApp</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="ticketinformation">Display Ticket Information</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Edit Events
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="addevent">Add Event</a></li>
+            <li><a class="dropdown-item" routerLink="tableevents">Edit/Delete Event</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container mid">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="bg-dark text-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Contact Us</h4>
+        <p>Email: contact@example.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About Us</a></li>
+          <li><a href="/">Our Services</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4>Connect With Us</h4>
+        <a href=""><i class="bi bi-facebook fa-2x"></i></a>
+        <a href=""><i class="bi bi-twitter fa-2x"></i></a>
+        <a href=""><i class="bi bi-linkedin fa-2x"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,8 @@
+.event-image {
+  max-width: 100%; /* Limit the image width to its container */
+  height: auto; /* Maintain the aspect ratio */
+}
+.img-limit {
+  max-width: 100%; /* Set the maximum width */
+  max-height: 500px; /* Set the maximum height */
+}

@@ -1,0 +1,6 @@
+.mid {
+  min-height: 100vh;
+  position: relative; /* Important for relative positioning */
+  margin: 0;
+  padding: 0;
+}

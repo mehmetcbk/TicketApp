@@ -1,0 +1,44 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">Add Event</div>
+        <div class="card-body">
+          <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label for="eventTitle">Event Title:</label>
+              <input type="text" class="form-control" id="eventTitle" formControlName="eventTitle" required>
+            </div>
+            <div class="form-group">
+              <label for="eventDescription">Event Description:</label>
+              <textarea class="form-control" id="eventDescription" formControlName="eventDescription" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="eventPrice">Event Price:</label>
+              <input type="number" class="form-control" id="eventPrice" formControlName="eventPrice" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="eventStartDate">Start Date:</label>
+                <input type="date" class="form-control" id="eventStartDate" formControlName="eventStartDate" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="eventEndDate">End Date:</label>
+                <input type="date" class="form-control" id="eventEndDate" formControlName="eventEndDate" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="eventNumberOfTicketAvailable">Number of Tickets:</label>
+              <input type="number" class="form-control" id="eventNumberOfTicketAvailable" formControlName="eventNumberOfTicketAvailable" required>
+            </div>
+            <div class="form-group mb-3">
+              <label for="eventImage">Event Image URL:</label>
+              <input type="text" class="form-control" id="eventImage" formControlName="eventImage">
+            </div>
+            <button type="submit" class="btn btn-primary">Add Event</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

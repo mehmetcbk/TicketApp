@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Event Table</h2>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Event Title</th>
+      <th>Event Description</th>
+      <th>Event Price</th>
+      <th>Event Start Date</th>
+      <th>Event End Date</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let event of events">
+      <td>{{ event.eventTitle }}</td>
+      <td>{{ event.eventDescription }}</td>
+      <td>{{ event.eventPrice }}</td>
+      <td>{{ event.eventStartDate | date }}</td>
+      <td>{{ event.eventEndDate | date }}</td>
+      <td>
+        <button class="btn btn-primary" [routerLink]="['/edit', event.id]" >Edit</button>
+        <button class="btn btn-danger" (click)="deleteEvent(event)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

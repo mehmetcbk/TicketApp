@@ -1,0 +1,37 @@
+<div class="container mt-5 ">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="card">
+        <img [src]="eventDetails.eventImage" class="img-limit" alt="{{ eventDetails.eventTitle }}">
+        <div class="card-body">
+          <h3 class="card-title">{{ eventDetails.eventTitle }}</h3>
+          <p class="card-text">{{ eventDetails.eventDescription }}</p>
+          <div class="row">
+            <div class="col-md-6">
+              <p class="card-text">Start Date: {{ eventDetails.eventStartDate | date:'medium':'UTC' }}</p>
+              <p class="card-text">End Date: {{ eventDetails.eventEndDate | date:'medium':'UTC' }}</p>
+            </div>
+            <div class="col-md-6">
+              <p class="card-text">Available Tickets: {{ eventDetails.eventNumberOfTicketAvailable }}</p>
+              <p class="card-text">Price: {{ eventDetails.eventPrice }} $</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Payment component section -->
+<div class="container mt-5 mb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">Payment Form</div>
+        <div class="card-body">
+          <app-payment [eventPrice]="eventDetails.eventPrice" [id]="eventDetails.id"></app-payment>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
