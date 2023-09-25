@@ -1,9 +1,9 @@
 ### Technologies Used
-TicketApp is app to buy tickets for concerts or any events:
+TicketApp is an application for purchasing tickets for concerts and other events. It consists of the following technologies:
 
 - **Frontend:** Angular
 - **Frontend Framework:** Bootstrap
 - **Backend:** ASP.NET
 - **Database:** PostgreSQL
 
-After setting up postgresql initialls in pgadmin and running Database-Update in package manager you can run both applications.
+To set up PostgreSQL, configure the initial settings in pgAdmin, and run the "Database-Update" command in the package manager. After completing these steps, you can run both applications.
