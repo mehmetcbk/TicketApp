@@ -11,3 +11,14 @@ To set up PostgreSQL, configure the initial settings in pgAdmin, and run the "Da
 
 ![Alt text](screenshots/home.png?raw=true "Home Screen")
 
+![Alt text](screenshots/events.png?raw=true "Events Screen")
+
+![Alt text](screenshots/eventinformation1.png?raw=true "Event Information Screen")
+
+![Alt text](screenshots/eventinformation2.png?raw=true "Event Information 2 Screen")
+
+![Alt text](screenshots/editevent.png?raw=true "Edit Event Screen")
+
+![Alt text](screenshots/displayticketinformation.png?raw=true "Ticket Information Screen")
+
+![Alt text](screenshots/addevent.png?raw=true "Add Event Screen")
